@@ -24,27 +24,29 @@ Low-key is a mental wellness app that assists users in notifying their friends a
 
 **Required Must-have Stories**
 
-[] User can make an account.
-[] User can sign in.
-[] User can stay signed in.
-[] User can log out. 
-[] User can set a mental health status. 
-[] User can sync contacts. 
-[] User can share location.  
+- [ ] User can make an account.
+- [ ] User can sign in.
+- [ ] User can stay signed in.
+- [ ] User can log out. 
+- [ ] User can set a mental health status.
+- [ ] User can share status with friends & family.
+- [ ] User can sync contacts. 
+- [ ] User can share location.  
 
 **Optional Nice-to-have Stories**
 
-[] User’s apple watch detection suggests breathing app.
-[] User can connect with other users on app.
-[] User sees feed of feelings/statuses.
+- [ ] User’s apple watch detection suggests breathing app.
+- [ ] User can connect with other users on app.
+- [ ] User sees feed of feelings/statuses.
 
 ### 2. Screen Archetypes
 
 * Login
    * User can make an account.
    * User can sign in.
-* 
-   * 
+* Send a new status.
+   * User can set a mental health status. 
+   * User can share status with friends & family. 
 * Settings
    * User can sync contacts.
    * User can share location. 
@@ -53,18 +55,13 @@ Low-key is a mental wellness app that assists users in notifying their friends a
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Send New Status
+* Settings
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Login -> Send New Status
+* Send New Status -> Settings
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
