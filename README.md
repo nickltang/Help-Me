@@ -8,16 +8,15 @@
 
 ## Overview
 ### Description
-[Description of your app]
+Low-key is a mental wellness app that assists users in notifying their friends and family about their current emotional wellbeing and needs.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category:** Health and Fitness
+- **Mobile:** This app is designed for mobile use, as its purpose is to be an accessible health tool for the user.
+- **Story:** Allows users to send selected contacts a list of emotions they’re feeling and what their needs are in times of emotional/mental distress.
+- **Market:** Individuals who would like to notify their family/friends about their emotional distress.
+- **Habit:** This app can be used anytime a user is feeling emotionally distressed.
+- **Scope:** It will start off with a few people and their trusted circle, but the user base may grow as this app gains traction.
 
 ## Product Spec
 
