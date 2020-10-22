@@ -29,7 +29,8 @@
 - [ ] User can sign in.
 - [ ] User can stay signed in.
 - [ ] User can log out. 
-- [ ] User can set a mental health status. 
+- [ ] User can set a mental health status.
+- [ ] User can share status with friends & family.
 - [ ] User can sync contacts. 
 - [ ] User can share location.  
 
@@ -44,8 +45,9 @@
 * Login
    * User can make an account.
    * User can sign in.
-* 
-   * 
+* Send a new status.
+   * User can set a mental health status. 
+   * User can share status with friends & family. 
 * Settings
    * User can sync contacts.
    * User can share location. 
@@ -54,18 +56,13 @@
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Send New Status
+* Settings
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Login -> Send New Status
+* Send New Status -> Settings
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
