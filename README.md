@@ -25,22 +25,30 @@
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+[] User can make an account.
+[] User can sign in.
+[] User can stay signed in.
+[] User can log out. 
+[] User can set a mental health status. 
+[] User can sync contacts. 
+[] User can share location.  
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+[] User’s apple watch detection suggests breathing app.
+[] User can connect with other users on app.
+[] User sees feed of feelings/statuses.
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Login
+   * User can make an account.
+   * User can sign in.
+* 
+   * 
+* Settings
+   * User can sync contacts.
+   * User can share location. 
 
 ### 3. Navigation
 
