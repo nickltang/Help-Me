@@ -67,8 +67,6 @@ Low-key is a mental wellness app that assists users in notifying their friends a
 ![Wireframes](wireframes1.PNG)
 ![Wireframe GIF](low-key.gif)
 
-### [BONUS] Digital Wireframes & Mockups
-
 ### [BONUS] Interactive Prototype
 
 ## Schema 
