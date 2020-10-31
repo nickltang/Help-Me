@@ -1,0 +1,6 @@
+framework module Pods_low_key {
+  umbrella header "Pods-low-key-umbrella.h"
+
+  export *
+  module * { export * }
+}
