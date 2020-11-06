@@ -71,7 +71,7 @@ Low-key is a mental wellness app that assists users in notifying their friends a
 
 ## Schema 
 ### Models
-#### Firestore Schema
+Firestore data model:
 ![Models](firestore-schema.PNG)
 
 ### Networking
