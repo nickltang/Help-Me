@@ -70,9 +70,10 @@ Low-key is a mental wellness app that assists users in notifying their friends a
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+Firestore data model:
+![Models](firestore-schema.PNG)
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
