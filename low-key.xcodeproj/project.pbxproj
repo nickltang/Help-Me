@@ -13,14 +13,12 @@
 		9E16E8B7254D0E20000149C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E16E8B5254D0E20000149C8 /* Main.storyboard */; };
 		9E16E8B9254D0E22000149C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E16E8B8254D0E22000149C8 /* Assets.xcassets */; };
 		9E16E8BC254D0E22000149C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E16E8BA254D0E22000149C8 /* LaunchScreen.storyboard */; };
-
-		9E16E8C6254D101E000149C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E16E8C5254D101E000149C8 /* GoogleService-Info.plist */; };
 		9E3F76B32555FD7500859717 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F76B22555FD7500859717 /* SignUpViewController.swift */; };
 		9E3F76B92555FDD700859717 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F76B82555FDD700859717 /* ViewController.swift */; };
 		9E3F76BD2556030B00859717 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F76BC2556030B00859717 /* LoginViewController.swift */; };
 		9E3F76C0255609ED00859717 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3F76BF255609ED00859717 /* Constants.swift */; };
 		9EF84937255620B8007DD7F4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF84936255620B8007DD7F4 /* ProfileViewController.swift */; };
-
+		D4D2041B255C80BC004386BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4D2041A255C80BC004386BD /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,14 +32,12 @@
 		9E16E8B8254D0E22000149C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E16E8BB254D0E22000149C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E16E8BD254D0E22000149C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-
-		9E16E8C5254D101E000149C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9E3F76B22555FD7500859717 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9E3F76B82555FDD700859717 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9E3F76BC2556030B00859717 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9E3F76BF255609ED00859717 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9EF84936255620B8007DD7F4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-
+		D4D2041A255C80BC004386BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +98,7 @@
 				9E16E8B8254D0E22000149C8 /* Assets.xcassets */,
 				9E16E8BA254D0E22000149C8 /* LaunchScreen.storyboard */,
 				9E16E8BD254D0E22000149C8 /* Info.plist */,
+				D4D2041A255C80BC004386BD /* GoogleService-Info.plist */,
 			);
 			path = "low-key";
 			sourceTree = "<group>";
@@ -178,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E16E8BC254D0E22000149C8 /* LaunchScreen.storyboard in Resources */,
+				D4D2041B255C80BC004386BD /* GoogleService-Info.plist in Resources */,
 				9E16E8B9254D0E22000149C8 /* Assets.xcassets in Resources */,
 				9E16E8B7254D0E20000149C8 /* Main.storyboard in Resources */,
 			);
@@ -384,7 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RLSM8763QG;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "low-key/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -403,7 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RLSM8763QG;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "low-key/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
