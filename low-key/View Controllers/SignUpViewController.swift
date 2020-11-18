@@ -75,6 +75,10 @@ class SignUpViewController: UIViewController {
                         }
                     }
                     
+                    // Save user's email and password locally to stay signed in
+                    UserDefaults.standard.setValue(email, forKey: "userEmail")
+                    UserDefaults.standard.setValue(password, forKey: "userPassword")
+                    
                     // transition to home screen
                     self.transitionToHome()
                 }
