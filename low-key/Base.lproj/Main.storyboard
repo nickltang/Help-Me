@@ -144,7 +144,7 @@
                             <constraint firstItem="ptD-iJ-1gR" firstAttribute="top" secondItem="V24-cz-qzZ" secondAttribute="top" constant="40" id="Vtk-B9-nX4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ycw-r3-xLf"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="Ycw-r3-xLf"/>
                     <connections>
                         <outlet property="emailTextField" destination="cmz-cG-bg8" id="F97-3H-chI"/>
                         <outlet property="errorLabel" destination="71l-v9-7lB" id="Zwp-8T-Z7V"/>
@@ -215,7 +215,7 @@
                             <constraint firstItem="KXZ-wm-kJd" firstAttribute="top" secondItem="yNB-30-tkB" secondAttribute="top" constant="40" id="nJA-CF-5Zg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="QZB-Op-ZMl"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="QZB-Op-ZMl"/>
                     <connections>
                         <outlet property="emailTextField" destination="Lwc-Z9-R69" id="8Jc-JW-gtB"/>
                         <outlet property="errorLabel" destination="dkW-Ig-pJ1" id="r36-sL-7Dh"/>
