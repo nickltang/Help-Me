@@ -11,7 +11,6 @@ import FirebaseAuth
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var errorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +21,6 @@ class ViewController: UIViewController {
         // sign in user
         Auth.auth().signIn(withEmail: email ?? "", password: password ?? "") { (result, error) in
             if error != nil {
-                self.errorLabel.text = error!.localizedDescription
-                self.errorLabel.alpha = 1
             } else {
                 // transition to home
 //                let homeVC = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewCOntroller) as? HomeViewController
