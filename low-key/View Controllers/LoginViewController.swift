@@ -36,10 +36,11 @@ class LoginViewController: UIViewController {
                 self.errorLabel.text = error!.localizedDescription
                 self.errorLabel.alpha = 1
             } else {
-                // transition to home
-//                let homeVC = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewCOntroller) as? HomeViewController
-//                self.view.window?.rootViewController = homeVC
-//                self.view.window?.makeKeyAndVisible()
+        // transition to home
+                let homeVC = self.storyboard?.instantiateViewController(identifier: "tabBarVC")
+                self.view.window?.rootViewController = homeVC
+                self.view.window?.makeKeyAndVisible()
+
             }
         }
         

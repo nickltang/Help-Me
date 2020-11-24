@@ -199,30 +199,60 @@
         <!--Status-->
         <scene sceneID="Oqr-cC-yvN">
             <objects>
-                <viewController id="l9S-eb-eQM" sceneMemberID="viewController">
+                <viewController id="l9S-eb-eQM" customClass="StatusViewController" customModule="low_key" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sWz-66-5pK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTY-hs-e0s">
-                                <rect key="frame" x="163" y="437.5" width="88" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDp-gD-GZJ">
+                                <rect key="frame" x="71" y="295" width="278" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yyq-Ml-Bs6">
+                                <rect key="frame" x="71" y="357" width="278" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvr-5O-DKh">
+                                <rect key="frame" x="189" y="456" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendData:" destination="l9S-eb-eQM" eventType="touchUpInside" id="1mQ-Cn-gKO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VvH-sd-9AP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="iTY-hs-e0s" firstAttribute="centerX" secondItem="sWz-66-5pK" secondAttribute="centerX" id="K2P-XM-xQp"/>
-                            <constraint firstItem="iTY-hs-e0s" firstAttribute="centerY" secondItem="sWz-66-5pK" secondAttribute="centerY" id="Oci-mA-rir"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Status" id="XqT-Te-hdV"/>
+                    <connections>
+                        <outlet property="messageField" destination="yyq-Ml-Bs6" id="PbS-gF-xp6"/>
+                        <outlet property="phoneNumberField" destination="DDp-gD-GZJ" id="Wy2-Ig-n6p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Umv-ki-InJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2957" y="-569"/>
+            <point key="canvasLocation" x="3013" y="64"/>
+        </scene>
+        <!--Contacts-->
+        <scene sceneID="XnM-K4-2ju">
+            <objects>
+                <viewController id="diO-YM-0O3" customClass="ContactsViewController" customModule="low_key" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rVq-Hr-r2T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5Ql-ra-7Lp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Contacts" id="THw-rh-pRs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jrr-Eh-mAx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3912" y="64"/>
         </scene>
         <!--Profile-->
         <scene sceneID="r93-df-qBP">
@@ -250,7 +280,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fGA-g8-ceg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2957" y="177"/>
+            <point key="canvasLocation" x="2129" y="64"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="l53-db-U4G">
@@ -279,17 +309,19 @@
                 <tabBarController storyboardIdentifier="tabBarVC" automaticallyAdjustsScrollViewInsets="NO" id="4lr-e4-EoN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OqX-Fg-9Co">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="l9S-eb-eQM" kind="relationship" relationship="viewControllers" id="7sm-Ag-Oqm"/>
                         <segue destination="19r-ri-RDR" kind="relationship" relationship="viewControllers" id="Ulg-33-cBL"/>
+                        <segue destination="diO-YM-0O3" kind="relationship" relationship="viewControllers" id="USk-F3-6xI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3QH-Lw-whN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1778" y="-294"/>
+            <point key="canvasLocation" x="3014" y="-713"/>
         </scene>
     </scenes>
     <resources>
