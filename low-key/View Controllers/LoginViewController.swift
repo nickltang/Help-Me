@@ -43,6 +43,7 @@ class LoginViewController: UIViewController {
                 self.errorLabel.text = error!.localizedDescription
                 self.errorLabel.alpha = 1
             } else {
+
                 
                 // Save user's email and password locally so they can stay signed in
                 UserDefaults.standard.setValue(email, forKey: "userEmail")
@@ -54,6 +55,7 @@ class LoginViewController: UIViewController {
                 
                 // transition to home screen
                 self.transitionToHome()
+
             }
         }
         
