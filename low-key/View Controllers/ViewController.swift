@@ -7,24 +7,39 @@
 //
 
 import UIKit
-import Foundation
+import FirebaseAuth
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var errorLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let email = UserDefaults.standard.string(forKey: "userEmail")
+        let password = UserDefaults.standard.string(forKey: "userPassword")
         
+        // sign in user
+        Auth.auth().signIn(withEmail: email ?? "", password: password ?? "") { (result, error) in
+            if error != nil {
+                self.errorLabel.text = error!.localizedDescription
+                self.errorLabel.alpha = 1
+            } else {
+                // transition to home
+//                let homeVC = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewCOntroller) as? HomeViewController
+//                self.view.window?.rootViewController = homeVC
+//                self.view.window?.makeKeyAndVisible()
+                
+                // transition to home screen
+                self.transitionToHome()
+            }
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func transitionToHome() {
+        let homeVC = storyboard?.instantiateViewController(identifier: "tabBarVC")
+        view.window?.rootViewController = homeVC
+        view.window?.makeKeyAndVisible()
     }
-    */
 
 }
