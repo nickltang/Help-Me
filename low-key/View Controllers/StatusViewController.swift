@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import Foundation
 
 class StatusViewController: UIViewController {
     
@@ -16,8 +17,8 @@ class StatusViewController: UIViewController {
     @IBOutlet weak var messageField: UITextField!
     
     // not safe to store credentials on client app
-    var AccoutSid = "AC4c54ed426d8623588135df369aa2020e"
-    var AuthToken = "e326bf1a44d7e1408e3d4ecb0d2a6fb4"
+    var AccoutSid = ProcessInfo.processInfo.environment["TWILIO_ACCOUNT_SID"] 
+    var AuthToken = ProcessInfo.processInfo.environment["TWILIO_AUTH_TOKEN"]
     var twilioNumber = "+13158430633"
     
     @IBAction func sendData(_ sender: Any) {
@@ -31,12 +32,16 @@ class StatusViewController: UIViewController {
             "Body": messageField.text ?? ""
         ]
         
-        AF.request("https://api.twilio.com/2010-04-01/Accounts/AC4c54ed426d8623588135df369aa2020e/Messages",
-                   method: .post,
-                   parameters: parameters
-        ).authenticate(username: AccoutSid, password: AuthToken)
-        .response { response in
-            debugPrint(response)
+        if AccoutSid != nil && AuthToken != nil {
+            AF.request("https://api.twilio.com/2010-04-01/Accounts/AC4c54ed426d8623588135df369aa2020e/Messages",
+                       method: .post,
+                       parameters: parameters
+            ).authenticate(username: AccoutSid!, password: AuthToken!)
+            .response { response in
+                debugPrint(response)
+            }
+        } else {
+            print("AccountSid and/or AuthToken are nil")
         }
     }
     
