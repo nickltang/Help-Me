@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lca-oI-vnZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lca-oI-vnZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -265,7 +265,7 @@
                         <viewLayoutGuide key="safeArea" id="jz3-eZ-zca"/>
                         <color key="backgroundColor" red="0.46337276700000002" green="0.43506082889999997" blue="0.44307148460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="L3y-Lk-Eiz"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="L3y-Lk-Eiz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfc-I9-VK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -399,7 +399,8 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dfr-gP-cMn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.62314786190000004" green="0.58695562869999995" blue="0.60297977079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.62314786190000004" green="0.58695562869999995" blue="0.60297977079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactCell" textLabel="P1g-Zb-nhQ" detailTextLabel="tp8-4W-2xa" rowHeight="77" style="IBUITableViewCellStyleSubtitle" id="TAN-f2-q7g">
                                 <rect key="frame" x="0.0" y="28" width="414" height="77"/>
@@ -424,6 +425,8 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.62314786190000004" green="0.58695562869999995" blue="0.60297977079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.62314786190000004" green="0.58695562869999995" blue="0.60297977079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -657,7 +660,7 @@
         <scene sceneID="Bqy-cx-OSt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Go-UV-SMT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Update Status" id="ANz-mw-1k0"/>
+                    <tabBarItem key="tabBarItem" title="Update Status" image="pencil.and.outline" catalog="system" id="ANz-mw-1k0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IKD-Gi-XK9">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -676,7 +679,7 @@
         <scene sceneID="vs0-sr-eg1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JC6-2c-q8S" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Feed" id="XqT-Te-hdV"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="list.bullet.rectangle" catalog="system" id="XqT-Te-hdV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cnQ-AY-Rfd">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -697,7 +700,10 @@
         <image name="arrow.forward.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrow.right.circle.fill" catalog="system" width="128" height="121"/>
         <image name="camera.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
         <image name="lowKeyLogoP2" width="2000" height="2000"/>
+        <image name="pencil.and.outline" catalog="system" width="128" height="128"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
