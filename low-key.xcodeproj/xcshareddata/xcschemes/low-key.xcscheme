@@ -58,7 +58,7 @@
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "TWILIO_AUTH_TOKEN"
-            value = "e326bf1a44d7e1408e3d4ecb0d2a6fb4"
+            value = "237c208332d9119bb29577e6ec871153"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
