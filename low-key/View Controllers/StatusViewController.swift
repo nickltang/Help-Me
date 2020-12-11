@@ -17,7 +17,7 @@ class StatusViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
+                
 //        // connects the data
         picker.delegate = self
         picker.dataSource = self
