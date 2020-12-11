@@ -16,6 +16,7 @@ class ContactsTableViewController: UITableViewController, CNContactPickerDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchedContacts()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -24,6 +25,8 @@ class ContactsTableViewController: UITableViewController, CNContactPickerDelegat
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
+    // implement contactPicker
+    // add selected contacts to table view
     
     @IBAction func showContactPicker(_ sender: Any) {
         let contactPicker = CNContactPickerViewController()
@@ -32,17 +35,63 @@ class ContactsTableViewController: UITableViewController, CNContactPickerDelegat
         self.present(contactPicker, animated: true, completion: nil)
     }
     
+    // allow user to PICK which contacts to add as a cell in table
+    private func fetchedContacts() {
+        
+        // contains user's contacts database
+        let store = CNContactStore();
+        
+        // asking for access from user
+        store.requestAccess(for: .contacts) { (granted, error) in
+            if let error = error {
+                print("failed to request access", error)
+                return
+            }
+            if granted {
+                // fetches only given name, family name, and phone number of contact
+                let keys = [CNContactGivenNameKey, CNContactFamilyNameKey, CNContactPhoneNumbersKey]
+                
+                // request object defines options/keys to use when fetching contacts
+                let request = CNContactFetchRequest(keysToFetch: keys as [CNKeyDescriptor])
+                do {
+                    // returns boolean indicating if enumeration of all contacts matching fetch request executed successfully
+                    // executes contact fetch request
+                    try store.enumerateContacts(with: request, usingBlock: { (contact, stopPointer) in
+                        self.contacts.append(PickedContact(firstName: contact.givenName, lastName: contact.familyName, telephone: contact.phoneNumbers.first?.value.stringValue ?? ""))
+                    })
+                } catch let error {
+                    print("Failed to enumerate contact", error)
+                }
+            } else {
+                print("access denied")
+            }
+        }
+    }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
+        
     }
 
+    // numer of rows equal to number of items in contacts array
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return contacts.count
+    }
+
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath)
+
+        // Configure the cell...
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 18.0)
+        cell.textLabel?.text = contacts[indexPath.row].firstName + " " + contacts[indexPath.row].lastName
+        cell.detailTextLabel?.text = contacts[indexPath.row].telephone
+
+        return cell
     }
 
     /*
