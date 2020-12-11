@@ -231,7 +231,7 @@
             <objects>
                 <viewController title="Feed" id="vQG-or-URT" customClass="ProfileViewController" customModule="low_key" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VyR-1Z-jis" customClass="Pr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wJR-Be-qhz">
@@ -282,7 +282,7 @@
             <objects>
                 <viewController id="l9S-eb-eQM" customClass="StatusViewController" customModule="low_key" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sWz-66-5pK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTY-hs-e0s">
@@ -351,7 +351,7 @@
             <objects>
                 <viewController id="19r-ri-RDR" customClass="ProfileViewController" customModule="low_key" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SH9-yS-jzn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's walk through how you're feeling..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qu0-rl-ZYC">
@@ -403,7 +403,7 @@
             <objects>
                 <tableViewController id="hmM-b8-09t" customClass="ContactsTableViewController" customModule="low_key" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dfr-gP-cMn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.62314786190000004" green="0.58695562869999995" blue="0.60297977079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.62314786190000004" green="0.58695562869999995" blue="0.60297977079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -552,7 +552,7 @@
             <objects>
                 <viewController id="udt-SY-WrH" customClass="StatusViewController" customModule="low_key" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hZb-AR-ziz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tell us how you're feeling:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Oy-lf-Wm9">
@@ -594,7 +594,7 @@
             <objects>
                 <viewController id="e9C-HP-GvP" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EYJ-2D-w9b">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lowKeyLogoP2" translatesAutoresizingMaskIntoConstraints="NO" id="xor-0c-Fte">
@@ -608,6 +608,9 @@
                                 <state key="normal" title="Feed">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="4lr-e4-EoN" kind="showDetail" id="FBx-OS-AUx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you for sharing. You're doing great!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7G-bj-7An">
                                 <rect key="frame" x="76" y="220" width="262" height="246"/>
@@ -674,7 +677,7 @@
                     <tabBarItem key="tabBarItem" title="Update Status" image="pencil.and.outline" catalog="system" id="ANz-mw-1k0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IKD-Gi-XK9">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -693,7 +696,7 @@
                     <tabBarItem key="tabBarItem" title="Feed" image="list.bullet.rectangle" catalog="system" id="XqT-Te-hdV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cnQ-AY-Rfd">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -706,6 +709,9 @@
             <point key="canvasLocation" x="3014" y="-159"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="FBx-OS-AUx"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="IMG_4071" width="2048" height="2048"/>
         <image name="arrow.forward.circle.fill" catalog="system" width="128" height="121"/>
