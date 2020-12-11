@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lca-oI-vnZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lca-oI-vnZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="r2Q-Ci-vRl">
             <objects>
-                <viewController id="pYl-kB-Izc" customClass="ViewController" customModule="low_key" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" id="pYl-kB-Izc" customClass="ViewController" customModule="low_key" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zxn-8r-NTX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -229,9 +229,9 @@
         <!--Feed-->
         <scene sceneID="wrw-qJ-1oH">
             <objects>
-                <viewController title="Feed" id="vQG-or-URT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VyR-1Z-jis">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController title="Feed" id="vQG-or-URT" customClass="ProfileViewController" customModule="low_key" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VyR-1Z-jis" customClass="Pr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wJR-Be-qhz">
@@ -260,12 +260,18 @@
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onLogout:" destination="vQG-or-URT" eventType="touchUpInside" id="dv8-8C-mOE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jz3-eZ-zca"/>
                         <color key="backgroundColor" red="0.46337276700000002" green="0.43506082889999997" blue="0.44307148460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="L3y-Lk-Eiz"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="L3y-Lk-Eiz"/>
+                    <connections>
+                        <outlet property="userProfileImage" destination="wJR-Be-qhz" id="aCI-cr-vVT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfc-I9-VK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -276,7 +282,7 @@
             <objects>
                 <viewController id="l9S-eb-eQM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sWz-66-5pK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTY-hs-e0s">
@@ -346,7 +352,7 @@
             <objects>
                 <viewController title="Feels" id="19r-ri-RDR" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SH9-yS-jzn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's walk through how you're feeling..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qu0-rl-ZYC">
@@ -401,7 +407,9 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dfr-gP-cMn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.62314786190000004" green="0.58695562869999995" blue="0.60297977079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.62314786190000004" green="0.58695562869999995" blue="0.60297977079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.46337276700000002" green="0.43506082889999997" blue="0.44307148460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactCell" textLabel="P1g-Zb-nhQ" detailTextLabel="tp8-4W-2xa" rowHeight="77" style="IBUITableViewCellStyleSubtitle" id="TAN-f2-q7g">
                                 <rect key="frame" x="0.0" y="28" width="414" height="77"/>
@@ -426,6 +434,8 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.62314786190000004" green="0.58695562869999995" blue="0.60297977079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.62314786190000004" green="0.58695562869999995" blue="0.60297977079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -507,6 +517,7 @@
                                 <state key="normal" title="/(&gt;////&lt;)/"/>
                                 <connections>
                                     <segue destination="e9C-HP-GvP" kind="show" id="ne4-8b-RwP"/>
+
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNp-dg-A2z">
@@ -550,6 +561,9 @@
                                 <state key="normal" title="Feed">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="4lr-e4-EoN" kind="showDetail" id="FBx-OS-AUx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you for sharing. You're doing great!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7G-bj-7An">
                                 <rect key="frame" x="76" y="220" width="262" height="246"/>
@@ -563,15 +577,16 @@
                         <color key="backgroundColor" red="0.46337276700000002" green="0.43506082889999997" blue="0.44307148460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="8Qb-ft-Ns5"/>
+
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcO-4u-91C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4193" y="656"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Login Navigation Controller-->
         <scene sceneID="l53-db-U4G">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lca-oI-vnZ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Initial" automaticallyAdjustsScrollViewInsets="NO" id="Lca-oI-vnZ" customClass="LoginNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qnz-sQ-LYm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -616,6 +631,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="y4c-rY-l2F"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Or-Ro-xFk">
+
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -629,10 +645,16 @@
             <point key="canvasLocation" x="5847.826086956522" y="637.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="FBx-OS-AUx"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="IMG_4071" width="2048" height="2048"/>
         <image name="camera.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
         <image name="lowKeyLogoP2" width="2000" height="2000"/>
+        <image name="pencil.and.outline" catalog="system" width="128" height="128"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
