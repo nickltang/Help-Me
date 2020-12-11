@@ -11,6 +11,8 @@ import FirebaseAuth
 
 class ViewController: UIViewController {
     
+    public var userLoggedIn = false;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,10 +21,12 @@ class ViewController: UIViewController {
         
         // sign in user
         Auth.auth().signIn(withEmail: email ?? "", password: password ?? "") { (result, error) in
-            if error != nil {
-                self.transitionToHome()
+                if error == nil {
+                    self.transitionToHome()
+                } else {
+                    print(error?.localizedDescription)
+                }
             }
-        }
     }
     
     func transitionToHome() {

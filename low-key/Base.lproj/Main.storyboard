@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="r2Q-Ci-vRl">
             <objects>
-                <viewController id="pYl-kB-Izc" customClass="ViewController" customModule="low_key" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginVC" id="pYl-kB-Izc" customClass="ViewController" customModule="low_key" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zxn-8r-NTX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -229,8 +229,8 @@
         <!--Feed-->
         <scene sceneID="wrw-qJ-1oH">
             <objects>
-                <viewController title="Feed" id="vQG-or-URT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VyR-1Z-jis">
+                <viewController title="Feed" id="vQG-or-URT" customClass="ProfileViewController" customModule="low_key" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VyR-1Z-jis" customClass="Pr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -260,12 +260,18 @@
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onLogout:" destination="vQG-or-URT" eventType="touchUpInside" id="dv8-8C-mOE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jz3-eZ-zca"/>
                         <color key="backgroundColor" red="0.46337276700000002" green="0.43506082889999997" blue="0.44307148460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="L3y-Lk-Eiz"/>
+                    <connections>
+                        <outlet property="userProfileImage" destination="wJR-Be-qhz" id="aCI-cr-vVT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfc-I9-VK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -615,10 +621,10 @@
             </objects>
             <point key="canvasLocation" x="7158" y="647"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Login Navigation Controller-->
         <scene sceneID="l53-db-U4G">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lca-oI-vnZ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Initial" automaticallyAdjustsScrollViewInsets="NO" id="Lca-oI-vnZ" customClass="LoginNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qnz-sQ-LYm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
