@@ -24,6 +24,8 @@
 		9EEB9B78258465C300EDA593 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEB9B77258465C300EDA593 /* Mood.swift */; };
 		9EF84937255620B8007DD7F4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF84936255620B8007DD7F4 /* ProfileViewController.swift */; };
 		C5D714C62565A7B800214094 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5D714C52565A7B800214094 /* GoogleService-Info.plist */; };
+		D482043E25847D61004C84C8 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D482043D25847D61004C84C8 /* FeedTableViewController.swift */; };
+		D482044125848011004C84C8 /* MoodCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D482044025848011004C84C8 /* MoodCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		9EEB9B77258465C300EDA593 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		9EF84936255620B8007DD7F4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C5D714C52565A7B800214094 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D482043D25847D61004C84C8 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		D482044025848011004C84C8 /* MoodCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 				9E16E8BA254D0E22000149C8 /* LaunchScreen.storyboard */,
 				9E16E8BD254D0E22000149C8 /* Info.plist */,
 				C5D714C52565A7B800214094 /* GoogleService-Info.plist */,
+				D482044025848011004C84C8 /* MoodCellTableViewCell.swift */,
 			);
 			path = "low-key";
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 				9E7A17B625639CF9007EFEDA /* StatusViewController.swift */,
 				9E7A17B92563ABD4007EFEDA /* ContactsViewController.swift */,
 				9E711278257339E900ADB374 /* ContactsTableViewController.swift */,
+				D482043D25847D61004C84C8 /* FeedTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -245,8 +251,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D482044125848011004C84C8 /* MoodCellTableViewCell.swift in Sources */,
 				9E7A17B725639CF9007EFEDA /* StatusViewController.swift in Sources */,
 				9E3F76BD2556030B00859717 /* LoginViewController.swift in Sources */,
+				D482043E25847D61004C84C8 /* FeedTableViewController.swift in Sources */,
 				9E711279257339E900ADB374 /* ContactsTableViewController.swift in Sources */,
 				9E3F76B92555FDD700859717 /* ViewController.swift in Sources */,
 				9EEB9B78258465C300EDA593 /* Mood.swift in Sources */,
