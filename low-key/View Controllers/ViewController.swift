@@ -21,10 +21,10 @@ class ViewController: UIViewController {
         
         // sign in user
         Auth.auth().signIn(withEmail: email ?? "", password: password ?? "") { (result, error) in
-                if error == nil {
-                    self.transitionToHome()
-                } else {
+                if error != nil {
                     print(error?.localizedDescription)
+                } else {
+                    self.transitionToHome()
                 }
             }
     }
