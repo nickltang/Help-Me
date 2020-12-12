@@ -8,8 +8,10 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
+import AlamofireImage
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var userProfileImage: UIImageView!
     
@@ -17,8 +19,57 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("profile loaded")
-        // Do any additional setup after loading the view.
+        
+    }
+    @IBAction func onProfilePicture(_ sender: Any) {
+        print("Tapped")
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        
+        if UIImagePickerController.isSourceTypeAvailable(.camera){
+            picker.sourceType = .camera
+        } else {
+            picker.sourceType = .photoLibrary
+        }
+        
+        present(picker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[.editedImage] as! UIImage
+        
+        let size = CGSize(width: 110, height: 110)
+        let scaledImage = image.af_imageScaled(to: size)
+        let roundedImage = scaledImage.af_imageRoundedIntoCircle()
+        userProfileImage.image = roundedImage
+        
+        // Upload image to firestore
+        let imageData = roundedImage.pngData()
+        
+        let db = Firestore.firestore()
+        let currentUser = Auth.auth().currentUser
+        var userId = ""
+        if let user = currentUser {
+            userId = currentUser!.uid
+        }
+                        
+        let dataToSave:[String:Any] = [
+            "profilePicture": imageData!
+            ]
+        
+        print(userId)
+        print(currentUser?.displayName)
+        
+        db.collection("users").document(userId).setData(dataToSave, merge: true) { (error) in
+            if error != nil {
+                debugPrint(error?.localizedDescription)
+            } else {
+                print("Success writing data")
+            }
+        }
+        
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func onLogout(_ sender: Any) {
@@ -39,6 +90,8 @@ class ProfileViewController: UIViewController {
             print("Error signing out: %@", signOutError)
         }
     }
+    
+    
     
     /*
     // MARK: - Navigation
