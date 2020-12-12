@@ -32,13 +32,10 @@ class StatusViewController: UIViewController {
         
         if let user = user {
             let uid = user.uid
-            let docRef = db.collection("users").document(uid)
-            
-            let timestamp = NSDate().timeIntervalSince1970
-            let moodObject = Mood(mood: moodLabel.text ?? "", date: timestamp)
-            
+            //let docRef = db.collection("users").document(uid)
+                        
             let moodData: [String:Any] = [
-                "mood": moodLabel.text,
+                "mood": moodLabel.text ?? "",
                 "date": Timestamp(date: Date())
             ]
             

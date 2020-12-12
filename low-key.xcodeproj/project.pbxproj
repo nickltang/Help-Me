@@ -22,6 +22,7 @@
 		9E7A17B725639CF9007EFEDA /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7A17B625639CF9007EFEDA /* StatusViewController.swift */; };
 		9E7A17BA2563ABD4007EFEDA /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7A17B92563ABD4007EFEDA /* ContactsViewController.swift */; };
 		9EEB9B78258465C300EDA593 /* Mood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEB9B77258465C300EDA593 /* Mood.swift */; };
+		9EEB9B8225848D5000EDA593 /* NotifedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEB9B8125848D5000EDA593 /* NotifedViewController.swift */; };
 		9EF84937255620B8007DD7F4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF84936255620B8007DD7F4 /* ProfileViewController.swift */; };
 		C5D714C62565A7B800214094 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5D714C52565A7B800214094 /* GoogleService-Info.plist */; };
 		D482043E25847D61004C84C8 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D482043D25847D61004C84C8 /* FeedTableViewController.swift */; };
@@ -48,6 +49,7 @@
 		9E7A17B625639CF9007EFEDA /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		9E7A17B92563ABD4007EFEDA /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		9EEB9B77258465C300EDA593 /* Mood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
+		9EEB9B8125848D5000EDA593 /* NotifedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifedViewController.swift; sourceTree = "<group>"; };
 		9EF84936255620B8007DD7F4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C5D714C52565A7B800214094 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D482043D25847D61004C84C8 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				9E7A17BA2563ABD4007EFEDA /* ContactsViewController.swift in Sources */,
 				9EF84937255620B8007DD7F4 /* ProfileViewController.swift in Sources */,
 				9E3F76B32555FD7500859717 /* SignUpViewController.swift in Sources */,
+				9EEB9B8225848D5000EDA593 /* NotifedViewController.swift in Sources */,
 				9E16E8B2254D0E20000149C8 /* SceneDelegate.swift in Sources */,
 				9E71127D25733B7400ADB374 /* PickedContact.swift in Sources */,
 			);
