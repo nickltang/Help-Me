@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import Firebase
 
 class StatusViewController: UIViewController {
 
     @IBOutlet weak var moodLabel: UILabel!
     @IBOutlet weak var picker: UIPickerView!
     let moodData = ["Sad", "Happy", "Mad", "Pretty Savage", "≧◡≦", "(☆ᴗ☆ ◍)", "(⋆////⋆)", "( ͡👁️ ͜ʖ ͡👁️)", "(ㆆ_ㆆ)", "ↁ_ↁ", "(>.<)"]
-        
+    
+    let db = Firestore.firestore()
+            
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -23,6 +26,33 @@ class StatusViewController: UIViewController {
         picker.dataSource = self
     }
 
+    @IBAction func saveData(_ sender: Any) {
+        
+        let user = Auth.auth().currentUser
+        
+        if let user = user {
+            let uid = user.uid
+            let docRef = db.collection("users").document(uid)
+            
+            let timestamp = NSDate().timeIntervalSince1970
+            let moodObject = Mood(mood: moodLabel.text ?? "", date: timestamp)
+            
+            let moodData: [String:Any] = [
+                "mood": moodLabel.text,
+                "date": Timestamp(date: Date())
+            ]
+            
+            db.collection("users").document(uid).collection("MoodCollection").addDocument(data: moodData) { err in
+                    if let err = err {
+                        print("Error writing document: \(err)")
+                    } else {
+                        print("Document sucessfully written!")
+                    }
+            }
+            
+        }
+    }
+    
 }
 
 extension StatusViewController: UIPickerViewDataSource {
@@ -49,4 +79,6 @@ extension StatusViewController: UIPickerViewDelegate {
         // using the row extract the value from your datasource (array[row])
         moodLabel.text = moodData[row]
     }
+    
+    
 }
