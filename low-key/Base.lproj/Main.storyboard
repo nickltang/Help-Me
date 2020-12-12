@@ -106,7 +106,7 @@
                                         <rect key="frame" x="0.0" y="162" width="334" height="34"/>
                                         <color key="backgroundColor" red="0.62314786188764515" green="0.58695562866129647" blue="0.60297977079247467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="new-password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zoO-qt-iCo">
                                         <rect key="frame" x="0.0" y="216" width="334" height="40"/>
@@ -178,7 +178,7 @@
                                         <rect key="frame" x="0.0" y="60" width="334" height="40"/>
                                         <color key="backgroundColor" red="0.62314786190000004" green="0.58695562869999995" blue="0.60297977079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJh-gr-EIs">
                                         <rect key="frame" x="0.0" y="120" width="334" height="40"/>
