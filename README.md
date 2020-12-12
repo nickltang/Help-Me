@@ -1,4 +1,5 @@
 # low-key
+![Low-Key Logo](IMG_4071.PNG)
 
 ## Table of Contents
 1. [Overview](#Overview)
