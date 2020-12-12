@@ -35,7 +35,7 @@ class ContactsViewController: UIViewController {
             "From": twilioNumber,
             "Body": messageField.text ?? ""
         ]
-        
+        /*
         if AccoutSid != nil && AuthToken != nil {
             AF.request("https://api.twilio.com/2010-04-01/Accounts/AC4c54ed426d8623588135df369aa2020e/Messages",
                        method: .post,
@@ -46,7 +46,7 @@ class ContactsViewController: UIViewController {
             }
         } else {
             print("AccountSid and/or AuthToken are nil")
-        }
+        } */
     }
 
     override func viewDidLoad() {
