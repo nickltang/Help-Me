@@ -8,7 +8,7 @@
 
 ## Overview
 ### Description
-Low-key is a mental wellness app that assists users in notifying their friends and family about their current emotional wellbeing and needs.
+A mental health app that helps you monitor your mental health and notify those you know in case of emergencies.
 
 ### App Evaluation
 - **Category:** Health and Fitness
@@ -24,13 +24,14 @@ Low-key is a mental wellness app that assists users in notifying their friends a
 
 **Required Must-have Stories**
 
-- [ ] User can make an account.
-- [ ] User can sign in.
-- [ ] User can stay signed in.
-- [ ] User can log out. 
-- [ ] User can set a mental health status.
-- [ ] User can share status with friends & family.
-- [ ] User can sync contacts. 
+- [x] User can make an account.
+- [x] User can sign in.
+- [x] User can stay signed in.
+- [x] User can log out. 
+- [x] User can set a mental health status.
+- [x] User can share **emergency** status with friends & family.
+- [x] User can sync contacts. 
+- [x] User can upload/set a profile picture.
 
 **Optional Nice-to-have Stories**
 
@@ -44,7 +45,7 @@ Low-key is a mental wellness app that assists users in notifying their friends a
 * Login
    * User can make an account.
    * User can sign in.
-* Send a new status.
+* Create a new status.
    * User can set a mental health status. 
    * User can sync contacts.
    * User can share status with friends & family. 
@@ -57,19 +58,19 @@ Low-key is a mental wellness app that assists users in notifying their friends a
 
 **Tab Navigation** (Tab to Screen)
 
-* Send New Status
-* Settings
+* Feed
+* Create New Status
+* Profile
 
 **Flow Navigation** (Screen to Screen)
 
-* Login -> Send New Status
-* Send New Status -> Settings
+* Login -> Feed
+* Create New Status -> Feed
 
 ## Wireframes
 ![Wireframes](wireframes1.PNG)
 ![Wireframe GIF](low-key.gif)
 
-### [BONUS] Interactive Prototype
 
 ## Schema 
 ### Models
