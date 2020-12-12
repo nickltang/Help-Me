@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import Alamofire
 import AlamofireImage
 
 class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -18,9 +19,8 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
+    
     @IBAction func onProfilePicture(_ sender: Any) {
         print("Tapped")
         let picker = UIImagePickerController()
@@ -40,7 +40,9 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         let image = info[.editedImage] as! UIImage
         
         let size = CGSize(width: 110, height: 110)
+        
         let scaledImage = image.af_imageScaled(to: size)
+        
         let roundedImage = scaledImage.af_imageRoundedIntoCircle()
         userProfileImage.image = roundedImage
         

@@ -26,7 +26,8 @@ class ViewController: UIViewController {
                 } else {
                     self.transitionToHome()
                 }
-            }
+        }
+    
     }
     
     func transitionToHome() {
