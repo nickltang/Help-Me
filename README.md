@@ -32,12 +32,12 @@ A mental health app that helps you monitor your mental health and notify those y
 - [x] User can share **emergency** status with friends & family.
 - [x] User can sync contacts. 
 - [x] User can upload/set a profile picture.
+- [x] User sees feed of feelings/statuses.
 
 **Optional Nice-to-have Stories**
 
 - [ ] User’s apple watch detection suggests breathing app.
 - [ ] User can connect with other users on app.
-- [ ] User sees feed of feelings/statuses.
 - [ ] User can share location.  
 
 ### 2. Screen Archetypes
@@ -68,7 +68,7 @@ A mental health app that helps you monitor your mental health and notify those y
 * Create New Status -> Feed
 
 ## Wireframes
-![Wireframes](wireframes1.PNG)
+![Wireframes](low-keyWireframe.png)
 ![Wireframe GIF](low-key.gif)
 
 
