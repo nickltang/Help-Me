@@ -12,6 +12,7 @@ target 'low-key' do
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
   pod 'Alamofire'
+  pod 'AlamofireImage','~> 3.1'
 	
   # add pods for any other desired Firebase products
   # https://firebase.google.com/docs/ios/setup#available-pods
