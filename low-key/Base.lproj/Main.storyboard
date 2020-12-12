@@ -231,7 +231,7 @@
             <objects>
                 <viewController title="Feed" id="vQG-or-URT" customClass="ProfileViewController" customModule="low_key" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VyR-1Z-jis" customClass="Pr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera.circle.fill" catalog="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wJR-Be-qhz">
@@ -291,33 +291,28 @@
             <objects>
                 <tableViewController id="JMe-p9-IEs" customClass="FeedTableViewController" customModule="low_key" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xYu-hZ-5aa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="sectionIndexBackgroundColor" red="0.46337276700000002" green="0.43506082889999997" blue="0.44307148460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="moodCell" rowHeight="164" id="NLW-Cm-9XL" customClass="MoodCellTableViewCell" customModule="low_key" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="164"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="moodCell" rowHeight="136" id="NLW-Cm-9XL" customClass="MoodCellTableViewCell" customModule="low_key" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="136"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NLW-Cm-9XL" id="nPz-V6-agU">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="164"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="136"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date update was posted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peS-TN-NuR">
-                                            <rect key="frame" x="141" y="41" width="177" height="21"/>
-                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0V-AM-oBb">
+                                            <rect key="frame" x="141" y="11" width="116" height="21"/>
+                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                             <color key="textColor" red="0.83811873199999998" green="0.72683399920000002" blue="0.61289089919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0V-AM-oBb">
-                                            <rect key="frame" x="20" y="128" width="116" height="21"/>
-                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="17"/>
-                                            <color key="textColor" red="0.83811873199999998" green="0.72683399920000002" blue="0.61289089919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User's mood (status)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYY-8h-0HZ">
-                                            <rect key="frame" x="141" y="67" width="147" height="20.5"/>
-                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User's mood (status)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYY-8h-0HZ">
+                                            <rect key="frame" x="141" y="44" width="241" height="54"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
                                             <color key="textColor" red="0.83811873199999998" green="0.72683399920000002" blue="0.61289089919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -328,18 +323,20 @@
                                                 <constraint firstAttribute="height" constant="110" id="tdd-Ob-J9y"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date update was posted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peS-TN-NuR">
+                                            <rect key="frame" x="230" y="106" width="177" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="17"/>
+                                            <color key="textColor" red="0.83811873199999998" green="0.72683399920000002" blue="0.61289089919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" red="0.46337276700000002" green="0.43506082889999997" blue="0.44307148460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
-                                        <constraint firstItem="peS-TN-NuR" firstAttribute="leading" secondItem="LaA-mu-uKt" secondAttribute="trailing" constant="5" id="HCH-It-mJc"/>
-                                        <constraint firstItem="peS-TN-NuR" firstAttribute="top" secondItem="nPz-V6-agU" secondAttribute="topMargin" constant="30" id="PFl-x3-hAa"/>
-                                        <constraint firstItem="AYY-8h-0HZ" firstAttribute="top" secondItem="peS-TN-NuR" secondAttribute="bottom" constant="5" id="PWX-hs-8kM"/>
-                                        <constraint firstItem="V0V-AM-oBb" firstAttribute="leading" secondItem="nPz-V6-agU" secondAttribute="leadingMargin" constant="30" id="f15-I4-yD5"/>
-                                        <constraint firstItem="LaA-mu-uKt" firstAttribute="leading" secondItem="nPz-V6-agU" secondAttribute="leadingMargin" id="fdg-Ef-5cI"/>
-                                        <constraint firstItem="V0V-AM-oBb" firstAttribute="top" secondItem="LaA-mu-uKt" secondAttribute="bottom" constant="7" id="kam-Xx-Gqo"/>
-                                        <constraint firstItem="AYY-8h-0HZ" firstAttribute="leading" secondItem="LaA-mu-uKt" secondAttribute="trailing" constant="5" id="ryZ-RJ-oA0"/>
-                                        <constraint firstItem="peS-TN-NuR" firstAttribute="leading" secondItem="LaA-mu-uKt" secondAttribute="trailing" constant="5" id="vUs-tT-qiw"/>
-                                        <constraint firstItem="LaA-mu-uKt" firstAttribute="top" secondItem="nPz-V6-agU" secondAttribute="topMargin" id="xhn-Xr-bfJ"/>
+                                        <constraint firstItem="V0V-AM-oBb" firstAttribute="trailing" secondItem="LaA-mu-uKt" secondAttribute="trailing" id="Drm-aE-fnn"/>
+                                        <constraint firstItem="LaA-mu-uKt" firstAttribute="top" secondItem="V0V-AM-oBb" secondAttribute="top" id="IfC-x9-dd1"/>
+                                        <constraint firstItem="LaA-mu-uKt" firstAttribute="leading" secondItem="nPz-V6-agU" secondAttribute="leadingMargin" id="p2H-2w-I53"/>
+                                        <constraint firstItem="LaA-mu-uKt" firstAttribute="top" secondItem="nPz-V6-agU" secondAttribute="topMargin" id="rlz-pM-TtV"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -366,7 +363,7 @@
             <objects>
                 <viewController title="Feels" id="19r-ri-RDR" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SH9-yS-jzn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lowKeyLogoP2" translatesAutoresizingMaskIntoConstraints="NO" id="UU4-1Q-M3Y">
@@ -392,7 +389,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1WM-Mo-3Hz">
-                                <rect key="frame" x="0.0" y="701" width="414" height="58"/>
+                                <rect key="frame" x="0.0" y="755" width="414" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="27"/>
@@ -498,6 +495,9 @@
                                 <state key="normal" title="Feed">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="4lr-e4-EoN" kind="presentation" id="DLw-JM-AUK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hng-gc-yuN"/>
@@ -563,10 +563,10 @@
             </objects>
             <point key="canvasLocation" x="3066.666666666667" y="655.58035714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--Post Emergency View Controller-->
         <scene sceneID="Ti2-pU-bW5">
             <objects>
-                <viewController id="e9C-HP-GvP" sceneMemberID="viewController">
+                <viewController id="e9C-HP-GvP" customClass="PostEmergencyViewController" customModule="low_key" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EYJ-2D-w9b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -583,7 +583,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4lr-e4-EoN" kind="showDetail" id="FBx-OS-AUx"/>
+                                    <segue destination="4lr-e4-EoN" kind="presentation" id="VKP-gI-9Xg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thank you for sharing. You're doing great!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7G-bj-7An">
@@ -627,7 +627,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="kaQ-DU-liS">
             <objects>
-                <tabBarController storyboardIdentifier="tabBarVC" automaticallyAdjustsScrollViewInsets="NO" id="4lr-e4-EoN" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarVC" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="4lr-e4-EoN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OqX-Fg-9Co">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -665,7 +665,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vv3-6H-Q2t"/>
+        <segue reference="DLw-JM-AUK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="IMG_4071" width="2048" height="2048"/>
